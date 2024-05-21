@@ -1,0 +1,28 @@
+
+May 18, 2024 15:35:18.495 NEW SESSION
+May 18, 2024 15:35:18.496 [16096:14156:0518/153518.494:ERROR:content_settings_pref.cc(405)] Invalid pattern strings: http://c,d,*
+May 18, 2024 15:35:20.810 [16096:15668:0518/153520.810:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+May 18, 2024 15:35:20.875 Created TensorFlow Lite XNNPACK delegate for CPU.
+May 18, 2024 15:35:50.242 [16096:15668:0518/153550.242:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+May 18, 2024 15:36:33.928 [16096:15668:0518/153633.927:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+May 18, 2024 15:38:22.15 [16096:15668:0518/153822.015:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+May 18, 2024 15:39:43.598 [14504:21876:0518/153943.598:ERROR:content_settings_pref.cc(405)] Invalid pattern strings: http://c,d,*
+May 18, 2024 15:39:45.857 [14504:20124:0518/153945.857:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+May 18, 2024 15:39:45.943 Created TensorFlow Lite XNNPACK delegate for CPU.
+May 18, 2024 15:40:07.620 [14504:20124:0518/154007.620:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+May 18, 2024 15:41:07.86 [14504:20124:0518/154107.086:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+May 18, 2024 15:42:34.316 [14504:20124:0518/154234.316:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -106
+
+May 20, 2024 14:52:36.822 NEW SESSION
+May 20, 2024 14:52:36.822 [2108:5852:0520/145236.820:ERROR:content_settings_pref.cc(405)] Invalid pattern strings: http://c,d,*
+May 20, 2024 14:52:40.302 Created TensorFlow Lite XNNPACK delegate for CPU.
+May 20, 2024 16:19:38.178 [11296:13816:0520/161938.177:ERROR:content_settings_pref.cc(405)] Invalid pattern strings: http://c,d,*
+May 20, 2024 16:19:41.642 Created TensorFlow Lite XNNPACK delegate for CPU.
+May 20, 2024 16:19:53.568 [9504:12432:0520/161953.568:ERROR:content_settings_pref.cc(405)] Invalid pattern strings: http://c,d,*
+May 20, 2024 16:19:56.131 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+May 21, 2024 15:53:55.877 NEW SESSION
+May 21, 2024 15:53:55.877 [9768:8168:0521/155355.875:ERROR:content_settings_pref.cc(405)] Invalid pattern strings: http://c,d,*
+May 21, 2024 15:53:59.785 Created TensorFlow Lite XNNPACK delegate for CPU.
+May 21, 2024 15:55:20.322 [6924:19176:0521/155520.322:ERROR:content_settings_pref.cc(405)] Invalid pattern strings: http://c,d,*
+May 21, 2024 15:55:23.931 Created TensorFlow Lite XNNPACK delegate for CPU.
