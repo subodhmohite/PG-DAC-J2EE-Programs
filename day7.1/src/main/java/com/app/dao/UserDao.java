@@ -17,5 +17,9 @@ public interface UserDao {
 	List<User> getAllUsers();
 	//add a method to return list of users by date of birth n role
 	List<User> getUsersByDobAndRole(LocalDate start,LocalDate end1,Role role);
+	//add a method to login
+	User login(String email,String password);
 
+	String changePassword(String email,String oldPass,String newpass);
+	
 }

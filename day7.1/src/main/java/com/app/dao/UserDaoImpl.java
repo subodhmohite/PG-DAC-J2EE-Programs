@@ -139,6 +139,59 @@ public class UserDaoImpl implements UserDao {
 	
 	}
 
+	@Override
+	public User login(String email, String password) {
+		User user=null;
+		String jpql="select u from User u where u.email=:em and u.password=:pass";
+		//1.get session from SF (get curnt session)
+		Session session=getFactory().getCurrentSession();
+		//2.begin tx
+		Transaction tx=session.beginTransaction();
+		try {
+			
+			user= session.createQuery(jpql,User.class)//query Object
+					.setParameter("em", email)
+					.setParameter("pass", password)
+					.getSingleResult();
+			tx.commit();
+		}catch(RuntimeException e) {
+			if(tx!=null)
+				tx.rollback();
+			//re throw the exception to the caller
+			throw e;
+		}
+		return user;
+	}
+
+	@Override
+	public String changePassword(String email, String oldPass, String newpass) {
+		String message="change password unsuccefuul";
+		
+		User user=null;
+		String jpql="select u from User u where u.email=:em and u.password=:pass";
+		//1.get session from SF (get curnt session)
+		Session session=getFactory().getCurrentSession();
+		//2.begin tx
+		Transaction tx=session.beginTransaction();
+		try {
+			
+			user= session.createQuery(jpql,User.class)//query Object
+					.setParameter("em", email)
+					.setParameter("pass", oldPass)
+					.getSingleResult();
+			user.setPassword(newpass);
+			tx.commit();
+			message="password change succefully";
+		}catch(RuntimeException e) {
+			if(tx!=null)
+				tx.rollback();
+			//re throw the exception to the caller
+			throw e;
+		}
+		user.setPassword("7373");
+		return message;
+	}
+
 	
 
 }
